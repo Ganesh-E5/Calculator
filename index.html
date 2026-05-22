@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="top">
+            <h1>Calculator</h1>
+            <button id="themebtn" onclick="toggleTheme()">🌙</button>
+        </div>
+        <div id="calc">
+            <input  id="inp" readonly>
+            <div id="btns">
+                <button id="ac" value="ac" onclick="perform(this.value)">AC</button>
+                <button id="back" value="back" onclick="perform(this.value)">&#9003;</button>
+                <button id="clr" value="clear" onclick="perform(this.value)">clear</button>
+                <button id="divi" value="/" onclick="perform(this.value)">/</button>
+                <button id="7" value="7" onclick="calculate(this.value)">7</button>
+                <button id="8" value="8" onclick="calculate(this.value)">8</button>
+                <button id="9" value="9" onclick="calculate(this.value)">9</button>
+                <button id="mul" value="*" onclick="perform(this.value)">*</button>
+                <button id="4" value="4" onclick="calculate(this.value)">4</button>
+                <button id="5" value="5" onclick="calculate(this.value)">5</button>
+                <button id="6" value="6" onclick="calculate(this.value)">6</button>
+                <button id="sub" value="-" onclick="perform(this.value)">-</button>
+                <button id="1" value="1" onclick="calculate(this.value)">1</button>
+                <button id="2" value="2" onclick="calculate(this.value)">2</button>
+                <button id="3" value="3" onclick="calculate(this.value)">3</button>
+                <button id="add" value="+" onclick="perform(this.value)">+</button>
+                <button id="dec" value="." onclick="calculate(this.value)">.</button>
+                <button id="0" value="0" onclick="calculate(this.value)">0</button>
+                <button id="equal" value="=" onclick="perform(this.value)">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

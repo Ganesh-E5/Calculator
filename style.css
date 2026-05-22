@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    font-size:3rem;
+}
+
+input{
+    height: 50px;
+    padding: 10px;
+    font-size: xx-large;
+    background-color:  rgb(34, 34, 34);;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+button{
+    background-color:  rgb(34, 34, 34);;
+    color: white;
+    font-size: xx-large;
+    border: 1px solid rgb(70, 68, 68);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color:  rgb(34, 34, 34);;
+    padding: 10px;
+    border: 2px solid rgb(56, 55, 55);
+    border-radius: 10px;
+
+}
+
+#calc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#btns{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+}
+
+#equal{
+    grid-column: span 2;
+}
+
+.light{
+    background-color:white;
+    color:black;
+}
+
+.light #main{
+    background-color:white;
+    border:2px solid lightgray;
+}
+
+.light button{
+    background-color:white;
+    color:black;
+}
+
+.light input{
+    background-color:white;
+    color:black;
+}
+
+#top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#themebtn{
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    padding: 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
